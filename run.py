@@ -7,6 +7,7 @@ Args: No arguments
 Return: Return data in a dictionary format
 '''
 # Read csv file
+from verify import *
 import pandas as pd # type: ignore
 import os
 
@@ -15,19 +16,6 @@ pd.set_option('display.max_rows', None)  # To display all rows
 pd.set_option('display.max_columns', None) 
     
     
-def verify_csv(filepath):
-    # Verify that user input a csv file - by verifying the last four characters
-    if not os.path.exists(filepath):
-        print("Error: File does not exist")
-        return None    
-    else:
-        print("\nStep 1: Completed - csv file verified\n")
-        return filepath
-
-def open_csv(verified_path):
-     # Open csv file in reader mode
-    df = pd.read_csv(f'{verified_path}') 
-    return df
 # Step 2
 def delete_columns(df):
     drop_columns = ['PTS', 'RNK','2PER', '3PER', 'FTPER']

@@ -1,4 +1,5 @@
-
+import pandas as pd
+import os
 
 def verify_csv(filepath):
     # Verify that user input a csv file - by verifying the last four characters
