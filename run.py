@@ -88,7 +88,7 @@ def production(df):
     df['ftProduction'] = df['ftMA'] - df['ftMI']
     
     if original_len_of_df < len(df.columns):
-        print('Step 5 Completed: Shooting production stats have been calculated.')
+        print('\nStep 5 Completed: Shooting production stats have been calculated.')
         return df
     else:
         print("Error adding columns")
