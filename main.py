@@ -40,13 +40,20 @@ while is_formatted == False:
     # Three different dataframes in new_dfs
     # Returns: twoStats, threeStats, ftStats, rebounding, aux(ast, blk, to, fouls)
     two_df = split_two_shooting(df)
-    twoDf_tolist = two_df.tolist()
+    # twoDf_tolist = two_df.tolist()
     three_df = split_three_shooting(df)
-    threeDf_tolist = three_df.tolist()
+    # threeDf_tolist = three_df.tolist()
     ft_df = split_ft_shooting(df)
-    ftDf_tolist = ft_df.tolist()
-    print(twoDf_tolist)
-
+    # ftDf_tolist = ft_df.tolist()
+    category = input('Would you like a team or player analysis?\n(type \'p\' or \'t\' or anything else to exit program: )')
+    match category:
+        case 'p':
+            print(df['Name'])
+            player = int(input('Please choose a player, enter # associated: '))
+            print('Name stored successfully!')
+        case 't':
+            print
+        
 
     break        
 
