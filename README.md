@@ -10,7 +10,11 @@ The Basketball Stat Calculator has one primary feature (right now 😏). It take
 - Sub-features: 
     * Calculates Game & Season Stats
     * File verification
-    * Shooting Calcualtions
+    * Player/Team Analysis
+        * Production
+        * Efficiency
+        * Effectiveness
+    * Player/Team Comparison
         * Production
         * Efficiency
         * Effectiveness
