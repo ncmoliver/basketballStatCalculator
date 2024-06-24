@@ -8,14 +8,14 @@ This is our goal. Our goal is to delve a little deeper below the surface with ea
 The Basketball Stat Calculator has one primary feature (right now 😏). It takes in a csv file returns various of different calculations based on the stats. 
 
 ### Sub-features: 
-    * Calculates Game & Season Stats
-    * File verification
-    * Player/Team Analysis
-        * Production
-        * Efficiency
-        * Effectiveness
-    * Player/Team Comparison
-        * Production
-        * Efficiency
-        * Effectiveness
+* Calculates Game & Season Stats
+* File verification
+* Player/Team Analysis
+    * Production
+    * Efficiency
+    * Effectiveness
+* Player/Team Comparison
+    * Production
+    * Efficiency
+    * Effectiveness
 
