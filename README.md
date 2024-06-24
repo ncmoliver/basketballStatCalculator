@@ -1,5 +1,5 @@
 # Basketball Calculator 
-<img src="image1.png" width="500" height="500">
+<img src="image1.png" width="800" height="500">
 
 ## Overview
 The basketball calculator was designed to analzye, display, and synthesize with basketball statistics. My belief is that statistics tell more of a story than we give it credit to, only when even single fact is accounted for. There are limited statistic shown on a single game basketball statistic. Taking this data and creating additional variables that are implied, yet based on facts to give to an AI model to begin telling more of the unseen story behind basketball. 
