@@ -5,6 +5,7 @@ from production import *
 from effciency import *
 from effectiveness import *
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Set the maximum number of rows and columns to display
 pd.set_option('display.max_rows', None)  # To display all rows
@@ -36,11 +37,19 @@ while is_formatted == False:
     df = production(calculable_df)
     df = efficient(calculable_df)
     df = effective(calculable_df)
+    # Three different dataframes in new_dfs
+    # Returns: twoStats, threeStats, ftStats, rebounding, aux(ast, blk, to, fouls)
+    two_df = split_two_shooting(df)
+    twoDf_tolist = two_df.tolist()
+    three_df = split_three_shooting(df)
+    threeDf_tolist = three_df.tolist()
+    ft_df = split_ft_shooting(df)
+    ftDf_tolist = ft_df.tolist()
+    print(twoDf_tolist)
 
 
-    print(df)
     break        
 
 else:
-    print("The csv file you have enter is invald.")
+    print("The csv file you have enter is invalid.")
     is_formatted = True

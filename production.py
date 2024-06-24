@@ -2,12 +2,13 @@
 
 def production(df):
     df['twoMI'] = df['twoA'] - df['twoMA']
-    df['twoProduction'] = df['twoMA'] - df['twoMI']
     df['threeMI'] = df['threeA'] - df['threeMA']
-    df['threeProduction'] = df['threeMA'] - df['threeMI']
     df['ftMI'] = df['ftA'] - df['ftMA']
+
+    df['twoProduction'] = df['twoMA'] - df['twoMI']
+    df['threeProduction'] = df['threeMA'] - df['threeMI']
     df['ftProduction'] = df['ftMA'] - df['ftMI']
-    
+
 
     return df
     

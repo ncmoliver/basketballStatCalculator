@@ -85,12 +85,21 @@ def change_to_int(df):
             for keys, values in convert_dict.items():
                 print('-' + keys)
             return df
-
+        
+# Step 5: Split dataframes 
+# Dataframes: twoShooting, threeShooting, ftShooting, rebounds, aux
 # Returns: Length of columns in dataframe 
 def length_of_df(df):
         length = len(df.columns)
         return length
 
 # Split dataframes into twoShooting, threeShooting, ftShooting, rebounds, aux
-def twoShooting_df(df):
-    twoShooting = df[['twoProduction', 'column2']]
+def split_two_shooting(df):
+    twoShootingDf = df[['Name', 'twoProduction', 'twoEfficiency', 'twoEffective', 'teamTwoProduction', 'teamTwoEffective']].copy()
+    return twoShootingDf
+def split_three_shooting(df):
+    threeShootingDf = df[['Name', 'threeProduction', 'threeEfficiency', 'threeEffective', 'teamThreeProduction', 'teamThreeEffective']].copy()
+    return threeShootingDf
+def split_ft_shooting(df):  
+    ftShootingDf = df[['Name', 'ftProduction', 'ftEfficiency', 'ftEffective', 'teamFtProduction', 'teamFtEffective']].copy()
+    return df
