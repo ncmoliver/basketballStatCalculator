@@ -1,8 +1,10 @@
 #Collect Data, Verify, and Convert Stats
 # Read csv file
-from verify import *
+from utils import *
 from production import *
-import pandas as pd # type: ignore
+from effciency import *
+from effectiveness import *
+import pandas as pd
 
 # Set the maximum number of rows and columns to display
 pd.set_option('display.max_rows', None)  # To display all rows
@@ -31,28 +33,14 @@ while is_formatted == False:
     calculable_df = change_to_int(formatted_data) 
     
     # Production, Efficiency, Effectiveness Calculations
-    
-    calculations(calculable_df)
-    
-    break
-        #Formatting data function
-        # split the Name column into two columns using pd.Series.str.split()
-        # df[['First Name', 'Last Name']] = df['Name'].str.split(' ', expand=True)
-        
-            
+    df = production(calculable_df)
+    df = efficient(calculable_df)
+    df = effective(calculable_df)
+
+
+    print(df)
+    break        
 
 else:
     print("The csv file you have enter is invald.")
     is_formatted = True
-
-
-
-# Format data
-
-# Creat a empty dictionary
-
-# Add data to dictionary
-
-# Balance: Calculate team stats
-
-# Add team stats to Stats dictionary
