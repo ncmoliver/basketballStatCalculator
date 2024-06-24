@@ -5,4 +5,6 @@ This is our goal. Our goal is to delve a little deeper below the surface with ea
 # ⭐️ Features
 The Basketball Stat Calculator has one primary feature (right now 😏). It takes in a csv file returns various of different calculations based on the stats. 
 
-- ⭐️ Sub-features: 
+- Sub-features: 
+    * File verification
+    * 
